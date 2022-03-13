@@ -10,7 +10,10 @@
     "app/**/*"
   ],
   "publish": {
-    "provider": "github"
+    "provider": "github",
+    "owner": "onyetapp",
+    "tag": "latest",
+    "version": "1.0.0"
   },
   "nsis": {
     "allowElevation": true,
@@ -19,7 +22,7 @@
   },
   "win": {
     "target": "nsis",
-    "icon": "assets/appIcon.ico"
+    "icon": "assets/favicon.ico"
   },
   "mac": {
     "category": "your.app.category.type",

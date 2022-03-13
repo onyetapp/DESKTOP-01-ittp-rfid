@@ -66,7 +66,7 @@ if (electronIsDev) {
   myCapacitorApp.getMainWindow().setMenu(null);
   myCapacitorApp.getMainWindow().setMenuBarVisibility(false);
   // Check for updates if we are in a packaged app.
-  autoUpdater.checkForUpdatesAndNotify();
+  // autoUpdater.checkForUpdatesAndNotify();
 })();
 
 // Handle when all of our windows are close (platforms have their own expectations).

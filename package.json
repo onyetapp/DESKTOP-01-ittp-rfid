@@ -1,6 +1,6 @@
 {
   "name": "rfid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An Amazing Capacitor App",
   "author": {
     "name": "Onyet Apps",
@@ -8,7 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/onyetapp/DESKTOP-01-ittp-rfid.git"
+    "url": "https://github.com/onyetapp/DESKTOP-01-ittp-rfid.git",
+    "private": false,
+    "name": "DESKTOP-01-ittp-rfid",
+    "owner": "onyetapp"
   },
   "license": "MIT",
   "main": "build/src/index.js",
@@ -17,7 +20,7 @@
     "electron:start-live": "node ./live-runner.js",
     "electron:start": "npm run build && electron --inspect=5858 ./",
     "electron:pack": "npm run build && electron-builder build --dir -c ./electron-builder.config.json",
-    "electron:make": "npm run build && electron-builder build -c ./electron-builder.config.json -p always"
+    "electron:make": "npm run build && electron-builder build -c ./electron-builder.config.json -p never"
   },
   "dependencies": {
     "@capacitor-community/electron": "^4.1.0",
